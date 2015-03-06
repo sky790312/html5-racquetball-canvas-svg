@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1, user-scalable=1">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link href="stylesheets/racquetball.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+  <div style="width: 800px; margin:100px auto; text-align: center;">
+      <div id="button-section">
+        <button onclick="drawGame('cvs')">Canvas</button>
+        <button onclick="drawGame('svg')">svg</button>
+      </div>
+      <div id="canvas-section">
+        <h1>
+          Canvas Racquetball
+        </h1>
+        <div>
+          <canvas id="CanvasGameBoard" width="300" height="300">
+          </canvas>
+        </div>
+      </div>
+      <div id="svg-section">
+        <h1>
+          SVG Racketball
+        </h1>
+        <!-- Create the SVG pane. -->
+        <svg height="300" width="300">
+          <!-- Create the board. -->
+          <rect x="1" y="1" width="298" height="298" fill="thistle" id="bpard" />
+          <!-- Create the ball. -->
+          <circle cx="150" cy="150" r="15" fill="tomato" id="ball" />
+          <!-- Create the paddle. -->
+          <rect x="150" y="290" width="150" height="10" fill="navy" id="paddle"
+          />
+        </svg>
+      </div>
+    </div>
+</body>
+<script src="js/racquetball.js"></script>
+</html>

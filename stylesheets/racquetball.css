@@ -1,0 +1,9 @@
+/* line 1, ../sass/racquetball.scss */
+#canvas-section, #svg-section {
+  display: none;
+}
+
+/* line 4, ../sass/racquetball.scss */
+#button-section {
+  margin-top: 100px;
+}
